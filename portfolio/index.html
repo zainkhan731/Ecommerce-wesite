@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zain ul Abadin | Portfolio</title>
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- SEO -->
+  <meta name="description" content="Zain ul Abadin — Full Stack Developer (React.js, Node.js, Tailwind, Bootstrap). Building modern, responsive, and user-friendly web apps.">
+  <meta name="author" content="Zain ul Abadin">
+  <link rel="icon" href="data:;base64,=">
+</head>
+
+<body class="bg-gray-950 text-white dark:bg-gray-950">
+  <!-- ===== Navbar ===== -->
+  <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+      <a href="#hero" class="text-xl font-bold tracking-wide text-indigo-400 hover:text-indigo-300">
+        Zain&nbsp;ul&nbsp;Abadin
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="hidden gap-8 text-sm text-gray-300 md:flex">
+        <li><a href="#hero" class="hover:text-indigo-300">Home</a></li>
+        <li><a href="#about" class="hover:text-indigo-300">About</a></li>
+        <li><a href="#skills" class="hover:text-indigo-300">Skills</a></li>
+        <li><a href="../index.html" class="hover:text-indigo-300">Projects</a></li>
+        <li><a href="#contact" class="hover:text-indigo-300">Contact</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+       
+
+        <!-- Mobile menu btn -->
+        <button id="menuBtn" class="rounded-lg border border-white/10 p-2 text-gray-300 hover:bg-white/5 md:hidden"
+                aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-black/60 md:hidden">
+      <ul class="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 text-gray-300">
+        <li><a href="#hero" class="block rounded-lg px-3 py-2 hover:bg-white/5">Home</a></li>
+        <li><a href="#about" class="block rounded-lg px-3 py-2 hover:bg-white/5">About</a></li>
+        <li><a href="#skills" class="block rounded-lg px-3 py-2 hover:bg-white/5">Skills</a></li>
+        <li><a href="../index.html" class="block rounded-lg px-3 py-2 hover:bg-white/5">Projects</a></li>
+        <li><a href="#contact" class="block rounded-lg px-3 py-2 hover:bg-white/5">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section id="hero" class="relative flex min-h-[100svh] items-center pt-24">
+    <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_40%_at_50%_10%,rgba(79,70,229,0.25),rgba(0,0,0,0))]"></div>
+
+    <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
+      <div class="space-y-6 opacity-0 translate-y-4 will-animate">
+        <p class="text-sm uppercase tracking-widest text-indigo-300/80">Full Stack Developer</p>
+
+        <h1 class="text-4xl font-extrabold leading-tight md:text-6xl">
+          Hi, I'm <span class="text-indigo-400">Zain&nbsp;ul&nbsp;Abadin</span>
+        </h1>
+
+        <p id="typewriter" class="min-h-[2.5rem] text-lg text-gray-300 md:text-xl"></p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="rounded-full border border-indigo-500/40 px-3 py-1 text-sm text-indigo-300">React.js</span>
+          <span class="rounded-full border border-indigo-500/40 px-3 py-1 text-sm text-indigo-300">Node.js</span>
+          <span class="rounded-full border border-indigo-500/40 px-3 py-1 text-sm text-indigo-300">Tailwind</span>
+          <span class="rounded-full border border-indigo-500/40 px-3 py-1 text-sm text-indigo-300">Bootstrap</span>
+          <span class="rounded-full border border-indigo-500/40 px-3 py-1 text-sm text-indigo-300">HTML</span>
+          <span class="rounded-full border border-indigo-500/40 px-3 py-1 text-sm text-indigo-300">CSS</span>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <a href="#projects"
+             class="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 font-medium text-white shadow-lg shadow-indigo-600/30 transition hover:bg-indigo-500">
+            <i class="fa-solid fa-eye"></i> View My Work
+          </a>
+          <a href="mailto:zainwazir32731@gmail.com"
+             class="inline-flex items-center gap-2 rounded-xl border border-white/10 px-5 py-3 font-medium text-gray-200 transition hover:bg-white/5">
+            <i class="fa-regular fa-paper-plane"></i> Hire Me
+          </a>
+        </div>
+      </div>
+
+      <div class="flex justify-center opacity-0 translate-y-4 will-animate">
+        <!-- FIXED: image path -->
+        <img src="./img/IMG-20250724-WA0058.jpg" alt="Zain ul Abadin"
+             class="h-64 w-64 rounded-full border-4 border-indigo-500/70 object-cover shadow-[0_10px_60px_-15px_rgba(99,102,241,0.6)] md:h-72 md:w-72">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="py-20">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur will-animate opacity-0 translate-y-4">
+        <h2 class="mb-4 text-3xl font-bold">About Me</h2>
+        <p class="text-gray-300">
+          I specialize in building high-quality, performance-driven web apps with
+          <span class="text-indigo-300">React.js</span> and
+          <span class="text-indigo-300">Node.js</span>. I love turning ideas into
+          clean, scalable products using modern tooling like
+          <span class="text-indigo-300">Tailwind CSS</span> and <span class="text-indigo-300">Bootstrap</span>.
+          My focus is on responsive UX, accessibility, and maintainable code.
+        </p>
+        <div class="mt-6 grid gap-4 sm:grid-cols-3">
+          <div class="rounded-xl border border-white/10 bg-black/30 p-4">
+            <p class="text-3xl font-bold text-indigo-400">20+</p>
+            <p class="text-sm text-gray-400">Components & UI Blocks</p>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-black/30 p-4">
+            <p class="text-3xl font-bold text-indigo-400">8+</p>
+            <p class="text-sm text-gray-400">Deployed Projects</p>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-black/30 p-4">
+            <p class="text-3xl font-bold text-indigo-400">100%</p>
+            <p class="text-sm text-gray-400">Mobile Responsive</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="mb-10 text-center text-3xl font-bold">My Skills</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur will-animate opacity-0 translate-y-4">
+          <div class="mb-3 flex items-center gap-3">
+            <i class="fa-brands fa-html5 text-3xl text-orange-500"></i>
+            <h3 class="text-xl font-semibold">HTML</h3>
+          </div>
+          <p class="text-gray-300">Semantic, accessible, and SEO-friendly markup.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur will-animate opacity-0 translate-y-4">
+          <div class="mb-3 flex items-center gap-3">
+            <i class="fa-brands fa-css3-alt text-3xl text-sky-500"></i>
+            <h3 class="text-xl font-semibold">CSS</h3>
+          </div>
+          <p class="text-gray-300">Modern layouts, fluid grids, and micro-interactions.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur will-animate opacity-0 translate-y-4">
+          <div class="mb-3 flex items-center gap-3">
+            <i class="fa-brands fa-react text-3xl text-cyan-400"></i>
+            <h3 class="text-xl font-semibold">React.js</h3>
+          </div>
+          <p class="text-gray-300">Component-driven UI, hooks, and state patterns.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur will-animate opacity-0 translate-y-4">
+          <div class="mb-3 flex items-center gap-3">
+            <!-- FIXED: Node icon -->
+            <i class="fa-brands fa-node-js text-3xl text-green-500"></i>
+            <h3 class="text-xl font-semibold">Node.js</h3>
+          </div>
+          <p class="text-gray-300">REST APIs, authentication, and server logic.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur will-animate opacity-0 translate-y-4">
+          <div class="mb-3 flex items-center gap-3">
+            <i class="fa-solid fa-wind text-3xl text-indigo-300"></i>
+            <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+          </div>
+          <p class="text-gray-300">Utility-first, fast development & consistent design.</p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur will-animate opacity-0 translate-y-4">
+          <div class="mb-3 flex items-center gap-3">
+            <i class="fa-brands fa-bootstrap text-3xl text-fuchsia-400"></i>
+            <h3 class="text-xl font-semibold">Bootstrap</h3>
+          </div>
+          <p class="text-gray-300">Rapid prototyping with polished components.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="py-20">
+    <div class="mx-auto max-w-7xl px-6">
+      <h2 class="mb-10 text-center text-3xl font-bold">Featured Projects</h2>
+
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Weather App -->
+        <a href="https://live-weather-woad.vercel.app/" target="_blank" rel="noopener noreferrer"
+           class="group rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur transition hover:scale-[1.02] hover:border-indigo-400/50 will-animate opacity-0 translate-y-4">
+          <div class="relative h-44 overflow-hidden rounded-xl">
+            <img src="./img/wea.jpg" alt="Weather App" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            <span class="absolute left-3 top-3 rounded-full bg-black/60 px-2 py-1 text-xs text-indigo-200">HTML • CSS • JS • API</span>
+          </div>
+          <div class="p-3">
+            <h3 class="text-lg font-semibold">Live Weather App</h3>
+            <p class="mt-1 text-sm text-gray-300">
+              Get real-time weather by city with OpenWeather API, responsive UI and error handling.
+            </p>
+          </div>
+        </a>
+
+        <!-- Advanced Calculator -->
+        <a href="https://advanced-calculator-six.vercel.app/" target="_blank" rel="noopener noreferrer"
+           class="group rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur transition hover:scale-[1.02] hover:border-indigo-400/50 will-animate opacity-0 translate-y-4">
+          <div class="relative h-44 overflow-hidden rounded-xl">
+            <img src="./img/cal.jpg" alt="Advanced Calculator" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            <span class="absolute left-3 top-3 rounded-full bg-black/60 px-2 py-1 text-xs text-indigo-200">JavaScript • Tailwind</span>
+          </div>
+          <div class="p-3">
+            <h3 class="text-lg font-semibold">Advanced Calculator</h3>
+            <p class="mt-1 text-sm text-gray-300">
+              Smooth animations, keyboard support, error states, and instant evaluation.
+            </p>
+          </div>
+        </a>
+
+        <!-- E-commerce (add live URL when ready) -->
+        <a href="https://ecomm-website-three-omega.vercel.app/" target="_blank" rel="noopener noreferrer"
+           class="group rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur transition hover:scale-[1.02] hover:border-indigo-400/50 will-animate opacity-0 translate-y-4">
+          <div class="relative h-44 overflow-hidden rounded-xl">
+            <img src="./img/Capture.JPG" alt="E-commerce Website" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+            <span class="absolute left-3 top-3 rounded-full bg-black/60 px-2 py-1 text-xs text-indigo-200">Html • Tailwind • JavaScript</span>
+          </div>
+          <div class="p-3">
+            <h3 class="text-lg font-semibold">E-commerce Website</h3>
+            <p class="mt-1 text-sm text-gray-300">
+              Product listing, cart, checkout & authentication. Scalable and mobile-first.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Quick links -->
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-3 text-sm">
+        <a href="https://www.linkedin.com/in/zain-ul-abadin-081b23314/" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 rounded-lg border border-white/10 px-3 py-2 text-gray-300 hover:bg-white/5">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/zainkhan731?tab=projects" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 rounded-lg border border-white/10 px-3 py-2 text-gray-300 hover:bg-white/5">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://vercel.com/zainkhan731s-projects/~/deployments" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 rounded-lg border border-white/10 px-3 py-2 text-gray-300 hover:bg-white/5">
+          <i class="fa-solid fa-rocket"></i> Vercel
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="py-20">
+    <div class="mx-auto max-w-4xl px-6">
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur will-animate opacity-0 translate-y-4">
+        <h2 class="mb-6 text-3xl font-bold">Contact Me</h2>
+        <p class="mb-6 text-gray-300">
+          Have a project in mind? Let’s build something amazing together.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="mailto:zainwazir32731@gmail.com"
+             class="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 font-medium text-white shadow-lg shadow-indigo-600/30 transition hover:bg-indigo-500">
+            <i class="fa-regular fa-envelope"></i> zainwazir32731@gmail.com
+          </a>
+
+          <details class="w-full">
+            <summary class="cursor-pointer text-sm text-gray-300 hover:text-white">Or send a quick message</summary>
+            <form class="mt-4 grid gap-3 sm:grid-cols-2">
+              <input type="text" placeholder="Your Name" class="w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 outline-none placeholder:text-gray-500">
+              <input type="email" placeholder="Email" class="w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 outline-none placeholder:text-gray-500">
+              <textarea placeholder="Message" class="sm:col-span-2 h-28 w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 outline-none placeholder:text-gray-500"></textarea>
+              <button type="button" class="sm:col-span-2 rounded-xl bg-indigo-600 px-5 py-3 font-medium text-white transition hover:bg-indigo-500">
+                Send Message
+              </button>
+            </form>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="border-t border-white/10 py-8">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-gray-400 md:flex-row">
+      <p>© <span id="year"></span> Zain ul Abadin. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="https://www.linkedin.com/in/zain-ul-abadin-081b23314/" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/zainkhan731?tab=projects" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-github"></i></a>
+        <a href="https://vercel.com/zainkhan731s-projects/~/deployments" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-solid fa-code"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Keep only this one script include -->
+  <script src="./script.js"></script>
+</body>
+</html>
